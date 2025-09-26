@@ -1,15 +1,24 @@
 
 export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="font-cursiva text-3xl">Este texto usa Homemade Apple</h1>
-      <h2 className="font-cuerpo text-2xl mb-6">Este texto usa Lora</h2>
-      <div className="flex items-center justify-between gap-4">
-        <div className="h-24 w-24 bg-celeste-500"></div>
-        <div className="h-24 w-24 bg-beige-500"></div>
-        <div className="h-24 w-24 bg-azul-500"></div>
-        <div className="h-24 w-24 bg-gris-500"></div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="relative min-h-screen w-full">
+			<div className="relative h-screen w-full">
+				<div
+					className="absolute inset-0 bg-cover bg-center"
+					style={{ backgroundImage: "url('/Fondo.png')" }} //Imagen de fondo
+				/>
+				{/* <div
+					className="absolute inset-0"
+					style={{ backgroundColor: "rgba(0,48,73,0.6)" }}
+				/> */}
+				{/* Content - with top padding to account for fixed header */}
+				<div className="relative z-10 flex flex-col items-center justify-center h-full pt-20">
+					{/* Your page content goes here */}
+					<div className="-mt-54"></div>
+					<h2 className="text-2xl font-cuerpo text-white tracking-widest">SELLAMOS EL INICIO DE NUESTRA VIDA</h2>
+					<h1 className="text-8xl font-cursiva text-white">gimena y juan</h1>
+				</div>
+			</div>
+		</div>
+	);
 }
