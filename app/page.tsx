@@ -1,7 +1,10 @@
+import LoadingScreen from "@/components/LoadingScreen";
+import ItinerarioSeccion from "@/components/ItinerarioSeccion";
 
 export default function Home() {
 	return (
-		<div className="relative min-h-screen w-full">
+		<>
+			<div className="relative min-h-screen w-full">
 			<div className="relative h-screen w-full">
 				<div
 					className="absolute inset-0 bg-cover bg-center"
@@ -19,6 +22,8 @@ export default function Home() {
 					<h1 className="text-8xl font-cursiva text-white">gimena y juan</h1>
 				</div>
 			</div>
+				<ItinerarioSeccion></ItinerarioSeccion>
 		</div>
+		</>
 	);
 }

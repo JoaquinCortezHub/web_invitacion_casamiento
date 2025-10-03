@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -206,4 +207,33 @@
   body {
     @apply bg-background text-foreground;
 	}
+}
+
+@layer utilities {
+  .paper-texture {
+    background-image: 
+      radial-gradient(circle at 20% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent),
+      linear-gradient(0deg, rgba(255,255,255,0.1) 50%, transparent 50%);
+  }
+  
+  .elegant-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .elegant-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .inclinado-leve {
+    transform: rotate(2deg);
+  }
+  
+  .inclinado-moderado {
+    transform: rotate(5deg);
+  }
+  
+  .inclinado-izquierda {
+    transform: rotate(-3deg);
+  }
 }
