@@ -56,13 +56,13 @@ export default function ItinerarioSeccion() {
       </div>
 
       {/* Bottom Section with Images and Quote */}
-      <div className="bg-gradient-to-b from-[#1E3A5F] to-[#0F1B2E] py-16">
+      <div className=" py-16">
         <div className="container mx-auto px-4">
           {/* Images Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-12">
             {[1, 2, 3].map((index) => (
               <div key={index} className="relative group overflow-hidden ">
-                <div className="bg-gradient-to-br from-orange-300 to-orange-500 h-64 flex items-center justify-center relative">
+                <div className="bg-gradient-to-br from-orange-300 to-orange-500 h-80 flex items-center justify-center relative">
                   {/* Placeholder for couple image */}
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="relative z-10 text-white text-center">
@@ -78,15 +78,13 @@ export default function ItinerarioSeccion() {
           </div>
 
           {/* Romantic Quote */}
-          <div className="text-center">
+        </div>
+          <div className="bg-celeste-500 w-100% text-center">
             <p 
-              className="text-white text-2xl md:text-3xl leading-relaxed max-w-4xl mx-auto"
-              style={{ fontFamily: 'Dancing Script, cursive' }}
-            >
-              “Sos mi lugar para volver Y eres mi patria en movimiento “
+              className="font-cursiva  text-white text-1xl md:text-3xl leading-relaxed max-w-2xl mx-auto p-10">
+              “Sos mi lugar para volver y eres mi patria en movimiento “
             </p>
           </div>
-        </div>
       </div>
     </div>
   );
